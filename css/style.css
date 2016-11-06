@@ -516,3 +516,12 @@ a {
   display: inline-block;
   content: '\f096';
 }
+
+/* line 414, ../sass/style.scss */
+.finished {
+  display: none;
+  font-size: 35px;
+  color: #23c266;
+  text-align: center;
+  margin-bottom:100px;
+}

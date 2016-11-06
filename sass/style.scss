@@ -410,3 +410,11 @@ a{
     content: '\f096';
   }
 }
+
+.finished{
+  display: none;
+  font-size: 24px;
+  color: #23c266;
+  text-align: center;
+  min-height:200px;
+}
