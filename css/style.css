@@ -1,0 +1,518 @@
+/*========== FONTS ===========*/
+@font-face {
+  font-family: 'FiraSans';
+  src: url("../fonts/FiraSans/FiraSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'FiraSans';
+  src: url("../fonts/FiraSans/FiraSans-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'FiraSans';
+  src: url("../fonts/FiraSans/FiraSans-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'FiraSans';
+  src: url("../fonts/FiraSans/FiraSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/FontAwesome/fontawesome-webfont.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+/*========== BASE ===========*/
+/* line 41, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 47, ../sass/style.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 52, ../sass/style.scss */
+body {
+  font-family: FiraSans;
+  color: #727272;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 60, ../sass/style.scss */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 64, ../sass/style.scss */
+.wrapper .empty {
+  height: 75px;
+}
+
+/* line 69, ../sass/style.scss */
+.footer {
+  height: 75px;
+  margin-top: -75px;
+  background: #212121;
+  color: #ffffff;
+  font-weight: 300;
+  position: relative;
+  padding: 20px;
+}
+/* line 77, ../sass/style.scss */
+.footer .footer__copyright {
+  line-height: 22px;
+  text-align: center;
+  width: 520px;
+  margin: 0 auto;
+}
+
+/* line 85, ../sass/style.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 88, ../sass/style.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 92, ../sass/style.scss */
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 96, ../sass/style.scss */
+a {
+  text-decoration: none;
+}
+
+/*========== HEADER ============*/
+/* line 102, ../sass/style.scss */
+.header {
+  width: 100%;
+  padding: 15px 30px;
+  background: #8cc34b;
+  height: 90px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 53, 0.49);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(50, 50, 53, 0.49);
+  box-shadow: 0px 5px 10px 0px rgba(50, 50, 53, 0.49);
+  margin-bottom: 62px;
+}
+
+/* line 112, ../sass/style.scss */
+.header_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 2, ../sass/_mixins.scss */
+.header__top:before, .header__top:after, .header__menu:before, .header__menu:after {
+  content: '';
+  display: table;
+}
+/* line 8, ../sass/_mixins.scss */
+.header__top:after, .header__menu:after {
+  clear: both;
+}
+
+/* line 119, ../sass/style.scss */
+.header__menu {
+  float: right;
+  width: 170px;
+}
+/* line 122, ../sass/style.scss */
+.header__menu ul {
+  float: left;
+  text-align: justify;
+  width: 100%;
+}
+/* line 126, ../sass/style.scss */
+.header__menu ul:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+/* line 132, ../sass/style.scss */
+.header__menu ul .menu__item {
+  display: inline-block;
+}
+
+/* line 138, ../sass/style.scss */
+.menu__link, .icon--time {
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  color: #e1eed4;
+  font-family: FontAwesome;
+  font-size: 2em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 147, ../sass/style.scss */
+.menu__link--vk:before {
+  content: "\f189";
+}
+/* line 150, ../sass/style.scss */
+.menu__link--git:before {
+  content: "\f09b";
+}
+/* line 153, ../sass/style.scss */
+.menu__link--sk:before {
+  content: "\f17e";
+}
+/* line 157, ../sass/style.scss */
+.menu__link:hover, .icon--time:hover {
+  color: #fff;
+}
+
+/* line 161, ../sass/style.scss */
+.header__author {
+  width: 550px;
+  float: left;
+}
+
+/* line 165, ../sass/style.scss */
+.header__author--face {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 170, ../sass/style.scss */
+.face {
+  display: inline-block;
+}
+
+/* line 174, ../sass/style.scss */
+.header__author--info {
+  width: 400px;
+  float: left;
+}
+
+/* line 178, ../sass/style.scss */
+.header__author--name {
+  color: #eff6e8;
+  font-size: 22px;
+}
+
+/* line 183, ../sass/style.scss */
+.header__author--email a {
+  color: #c0e398;
+}
+
+/* line 188, ../sass/style.scss */
+.face__img {
+  display: block;
+  max-width: 63px;
+  max-height: 63px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* line 196, ../sass/style.scss */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 2, ../sass/_mixins.scss */
+.container:before, .container:after {
+  content: '';
+  display: table;
+}
+/* line 8, ../sass/_mixins.scss */
+.container:after {
+  clear: both;
+}
+/* line 200, ../sass/style.scss */
+.container .cols {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 205, ../sass/style.scss */
+.container .cols.col-1 {
+  width: 8.33333%;
+}
+/* line 208, ../sass/style.scss */
+.container .cols.col-2 {
+  width: 16.66667%;
+}
+/* line 211, ../sass/style.scss */
+.container .cols.col-3 {
+  width: 25%;
+}
+/* line 214, ../sass/style.scss */
+.container .cols.col-4 {
+  width: 33.33333%;
+}
+/* line 217, ../sass/style.scss */
+.container .cols.col-5 {
+  width: 41.66667%;
+}
+/* line 220, ../sass/style.scss */
+.container .cols.col-6 {
+  width: 50%;
+}
+/* line 223, ../sass/style.scss */
+.container .cols.col-7 {
+  width: 58.33333%;
+}
+/* line 226, ../sass/style.scss */
+.container .cols.col-8 {
+  width: 66.66667%;
+}
+/* line 229, ../sass/style.scss */
+.container .cols.col-9 {
+  width: 75%;
+}
+/* line 232, ../sass/style.scss */
+.container .cols.col-10 {
+  width: 83.33333%;
+}
+/* line 235, ../sass/style.scss */
+.container .cols.col-11 {
+  width: 91.66667%;
+}
+/* line 238, ../sass/style.scss */
+.container .cols.col-12 {
+  width: 100%;
+}
+
+/* line 244, ../sass/style.scss */
+.courses {
+  background: url(../img/gplaypattern.png);
+  padding-bottom: 60px;
+}
+
+/* line 248, ../sass/style.scss */
+.about {
+  margin-bottom: 75px;
+}
+
+/* line 251, ../sass/style.scss */
+.about__title, .course__title {
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+  margin: 18px 0;
+  color: #000;
+}
+
+/* line 258, ../sass/style.scss */
+.about__info, .course__info {
+  font-size: 21px;
+  font-weight: 300;
+  color: #727272;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 266, ../sass/style.scss */
+.about__box--img img {
+  max-width: 100%;
+}
+
+/* line 269, ../sass/style.scss */
+.box__title {
+  font-size: 21px;
+  color: #000;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+/* line 275, ../sass/style.scss */
+.about__box--text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+/* line 280, ../sass/style.scss */
+.about__box--text a {
+  color: #03a9f4;
+  border-bottom: 1px solid #03a9f4;
+}
+
+/* line 285, ../sass/style.scss */
+.course__wrapper {
+  float: left;
+}
+/* line 287, ../sass/style.scss */
+.course__wrapper:nth-child(3n) {
+  clear: left;
+}
+
+/* line 291, ../sass/style.scss */
+.course__box {
+  -webkit-box-shadow: 0px 3px 10px 1px rgba(199, 193, 199, 0.75);
+  -moz-box-shadow: 0px 3px 10px 1px rgba(199, 193, 199, 0.75);
+  box-shadow: 0px 3px 10px 1px rgba(199, 193, 199, 0.75);
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 297, ../sass/style.scss */
+.course__box.course__checked {
+  box-shadow: none;
+}
+/* line 300, ../sass/style.scss */
+.course__box.course__checked .course__box--in {
+  background: #edf5e3;
+}
+/* line 303, ../sass/style.scss */
+.course__box.course__checked .course__box--footer {
+  background: #e8f0db;
+}
+/* line 305, ../sass/style.scss */
+.course__box.course__checked .course__box--footer label {
+  color: #8cc34b;
+}
+
+/* line 311, ../sass/style.scss */
+.course__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 315, ../sass/style.scss */
+.course__box--in {
+  background: #fff;
+  padding: 20px;
+}
+
+/* line 320, ../sass/style.scss */
+.course__box--in--title {
+  color: #212121;
+  font-size: 21px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 325, ../sass/style.scss */
+.course__box--in--title:hover {
+  color: #8cc34b;
+}
+
+/* line 330, ../sass/style.scss */
+.course__box--in--text {
+  color: #727272;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* line 336, ../sass/style.scss */
+.course__box--in--time {
+  color: #b6b6b6;
+}
+
+/* line 340, ../sass/style.scss */
+.icon--time {
+  font-size: 1em;
+  color: #b6b6b6;
+}
+/* line 344, ../sass/style.scss */
+.icon--time:before {
+  content: '\f017';
+}
+/* line 347, ../sass/style.scss */
+.icon--time:hover {
+  color: #b6b6b6;
+}
+
+/* line 351, ../sass/style.scss */
+.course__box--footer {
+  background: #f6f7f2;
+  height: 60px;
+  color: #727272;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* line 56, icons/*.png */
+.icons-sprite, .icons-checkbox-checked, .icons-checkbox {
+  background-image: url('/img/icons-s164b824183.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-checkbox-checked {
+  background-position: 0 0;
+}
+
+/* line 84, C:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-checkbox {
+  background-position: 0 -20px;
+}
+
+/* line 364, ../sass/style.scss */
+.course__box--footer input[type=checkbox] {
+  display: none;
+}
+/* line 367, ../sass/style.scss */
+.course__box--footer label {
+  cursor: pointer;
+  line-height: 24px;
+  float: left;
+}
+/* line 371, ../sass/style.scss */
+.course__box--footer label:before {
+  cursor: pointer;
+  float: left;
+  margin-right: 20px;
+}
+/* line 377, ../sass/style.scss */
+.course__box--footer input[type=checkbox] + label:before {
+  background-image: url("../img/icons-s164b824183.png");
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  content: '';
+}
+/* line 386, ../sass/style.scss */
+.course__box--footer input[type=checkbox]:checked + label:before {
+  background-image: url("../img/icons-s164b824183.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  content: '';
+}
+
+/* line 397, ../sass/style.scss */
+.course__checkbox {
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+}
+/* line 398, ../sass/style.scss */
+.course__checkbox[type=checkbox] {
+  display: none;
+}
+/* line 408, ../sass/style.scss */
+.course__checkbox:before {
+  display: inline-block;
+  content: '\f096';
+}
